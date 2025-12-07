@@ -7,7 +7,7 @@ unset ROCR_VISIBLE_DEVICES
 
 export no_proxy="127.0.0.1,localhost"
 
-bash ./alphaverl/vllm_service_init/start_server.sh &
+bash vllm_service_init/start_server.sh &
 SERVER_PID=$!
 
 sleep 180

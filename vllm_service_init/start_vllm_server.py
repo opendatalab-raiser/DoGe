@@ -20,7 +20,7 @@ def load_images(image_paths: List[str]) -> List[Image.Image]:
     images = []
     for p in image_paths:
         if not os.path.exists(p):
-            raise FileNotFoundError(f"图片文件未找到: {p}")
+            raise FileNotFoundError(f"Image File Not found: {p}")
         with Image.open(p) as im:
             images.append(im.convert("RGB"))
     return images
