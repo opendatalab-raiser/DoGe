@@ -29,6 +29,56 @@ DoGe builds an iterative curriculum learning pipeline:
 
 ---
 
+## Quick Start
+
+### 🖥️ Environment Setup
+
+Configure the environment according to the guidelines below：
+
+```bash
+# Example: Create and activate a virtual environment (replace with actual commands)
+conda create -n doge python=3.10
+conda activate doge
+
+# clone this repository
+git clone https://github.com/opendatalab-raiser/DoGe
+cd DoGe
+
+# Install dependency packages
+pip install -r requirements.txt
+```
+
+### 📥 Dataset Download
+
+You can directly download datasets from our official Huggingface Repository [DoGe](https://huggingface.co/datasets/opendatalab-raiser/DoGe):
+
+```bash
+# Create a dedicated directory for storing the dataset
+mkdir -p data
+
+# Clone the dataset repository from Hugging Face to the data directory
+git clone https://huggingface.co/datasets/opendatalab-raiser/DoGe data/DoGe
+cd data/DoGe
+
+# Unzip the image archive file
+tar -xzf imgs.tar.gz
+```
+
+### ▶️ Run Experiment
+
+Replace the corresponding parameters in the startup file, including the dataset and model, with your actual paths:
+
+```bash
+# DoGe Training Stage 1: Thinker
+bash scripts/run_qwen2_5_vl-7b_doge.sh
+
+# DoGe Training Stage 2: Anneal
+bash scripts/run_qwen2_5_vl-7b.sh
+```
+
+
+---
+
 ## Experiment Results 📊
 
 We evaluate DoGe on **7 benchmarks** covering:
