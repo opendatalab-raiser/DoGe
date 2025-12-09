@@ -122,6 +122,12 @@ We evaluate DoGe on **7 benchmarks** covering:
 - 🌐 Wider distribution of synthetic training data compared to manual annotations
 - 🔄 Stable performance across iterations (unlike baseline's fluctuating results)
 
+---
+
+## 🙏 Acknowledgements
+
+The code implementation of our work is based on [**verl**](https://github.com/volcengine/verl), and we would like to express our gratitude to this project for providing an excellent VLM reinforcement learning toolkit.
+
 ## ✍️ Citation
 
 ```bibtex
