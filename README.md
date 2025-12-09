@@ -121,3 +121,17 @@ We evaluate DoGe on **7 benchmarks** covering:
 - 📈 Higher policy entropy throughout training (avoids entropy collapse)
 - 🌐 Wider distribution of synthetic training data compared to manual annotations
 - 🔄 Stable performance across iterations (unlike baseline's fluctuating results)
+
+## ✍️ Citation
+
+```bibtex
+@misc{li2025decouplegeneralizecontextfirstselfevolving,
+      title={Decouple to Generalize: Context-First Self-Evolving Learning for Data-Scarce Vision-Language Reasoning}, 
+      author={Tingyu Li and Zheng Sun and Jingxuan Wei and Siyuan Li and Conghui He and Lijun Wu and Cheng Tan},
+      year={2025},
+      eprint={2512.06835},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2512.06835}, 
+}
+```
